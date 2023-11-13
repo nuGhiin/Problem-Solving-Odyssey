@@ -14,7 +14,7 @@ int main(){
 
     long long int n;
     cin>>n;
-    int a=fact(n);
+    long long int a=fact(n);
     cout<<a<<endl;
 
 return 0;
