@@ -6,7 +6,7 @@ long long int fact(long long int n){
         return 1;
     }
 
-    int ans=fact(n-1);
+    long long int ans=fact(n-1);
     return ans*n;
 }
 
