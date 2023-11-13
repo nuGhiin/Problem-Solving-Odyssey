@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-long long int fact(int n){
+long long int fact(long long int n){
     if(n==0){ //base case
         return 1;
     }
