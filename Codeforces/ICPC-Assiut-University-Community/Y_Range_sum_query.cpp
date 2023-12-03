@@ -36,17 +36,17 @@ int main(){
     cin>>n>>q;
 
     long long int a[n];
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n; i++){ // O(n)
         cin>>a[i];
     }
     
     long long int pref[n];
     pref[0]=a[0];
-    for(int i=1; i<n; i++){ //prefix array
+    for(int i=1; i<n; i++){ //prefix array //O(n)
         pref[i]=a[i]+pref[i-1];
     }
 
-    while(q--){ //query input nilam
+    while(q--){ //query input nilam //O(q)
         int l, r;
         cin>>l>>r;
         l--; // -'s reason: converting postion to index
@@ -60,7 +60,8 @@ int main(){
         else{
             sum=pref[r]-pref[l-1];
         }
-        cout<<sum<<endl;
+        cout<<sum<<endl;   
     }
+    // So time complexity = O(n+q)= (10^5+10^5) = O(10^5)
 return 0;
 } 
