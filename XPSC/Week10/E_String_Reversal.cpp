@@ -3,8 +3,6 @@
 #include <ext/pb_ds/tree_policy.hpp>
 using namespace __gnu_pbds;
 using namespace std;
-typedef long long ll;
-
 template <typename T>
 using pbds = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
@@ -34,7 +32,7 @@ int main()
     }
 
     pbds<int> p;
-    ll ans = 0;
+    long long ans = 0;
     for (int i = n - 1; i >= 0; i--)
     {
         ans += p.order_of_key(per[i]);
