@@ -10,20 +10,20 @@ int main()
     {
         cin >> v[i];
     }
-    set<int> st;
+    set<int> s;
     int ans = -1, start = 0;
     for (int i = 0; i < n; i++)
     {
 
-        while (st.count(v[i]))
+        while (s.count(v[i]))
         {
-            st.erase(v[start]);
+            s.erase(v[start]);
             start++;
         }
-        st.insert(v[i]);
-        ans = max(ans, int(st.size()));
+        s.insert(v[i]);
+        ans = max(ans, int(s.size()));
     }
-    
+
     cout << ans << endl;
 
     return 0;
