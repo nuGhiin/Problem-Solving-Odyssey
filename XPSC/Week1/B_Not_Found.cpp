@@ -13,10 +13,10 @@ int main(){
         if(a[i]==0){
             char c= i+97; 
             cout<<c<<endl;
-            break;
+            return 0;
         }
     }
     cout<<"None"<<endl;
 
 return 0;
-}
+} 
